@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="C:\Udacity Front End Web Developer\blog.css"/>
+  <head>
+  <img src ="C:\Udacity Front End Web Developer\saving.jpg" alt="Savings" width=100px height=100px style="vertical-align:middle">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <title>"Ways to save Money Everyday"</title>
+  <style>
+          
+.item1 { grid-area: header; }
+.item2 { grid-area:Purchase;}
+.item3 { grid-area:Savings_Account; }
+.item4 { grid-area:Divident_paying_stocks; }
+.item5 { grid-area:Cutting_Expense; }
+.item6 { grid-area:Own_house; }
+.item7 { grid-area:Sell_your_home_without_Realtor; }
+.item8 { grid-area:Saving_on_insurance; }
+.item9{ grid-area:Save_our_planet; }
+ 
+.grid-container {
+     display: grid;
+     grid-template-areas:
+     'header header header header'
+     'Purchase Savings_Account Divident_paying_stocks Cutting_Expense'
+     'Own_house Sell_your_home_without_Realtor  Saving_on_insurance   Save_our_planet';
+      grid-gap: 50px;
+      background-color:blue;
+      padding: 5px;
+      width:auto;
+}
+@media(min-width:900px){
+.grid-container > div {
+  
+      text-align: center;
+      padding: 5px 0;
+      font-size: 30px;
+      align-items: center;
+      background-color:deeppink;
+      width:auto;
+  }}
+.footer{
+      display:flex;
+      flex-direction: row;
+      font-size: 15px;
+      justify-content:center;
+ }
+.contacts,
+.faq,
+.twitter,
+.linkdin{
+        width:auto;
+        height:auto;
+        border:blue;
+}
+.item2{
+  @import url(C:\Udacity Front End Web Developer\purchase.png);
+}
+
+.item3{
+  @import url(C:\Udacity Front End Web Developer\savings_account.jpg);
+}
+
+</style>
+</head>
+<body>
+<h1>Ways to Save Money Everyday</h1>
+<p>As we say <B> "a Penny saved is penny earned" </B>,savinng is as important as earning.
+   The following table has all the info for saving  money everyday
+<p>Clicking on each link will take to the world of saving money</p>
+
+<div class="grid-container">
+  <div class="item1">Ways to save Money Everyday</div>
+  <div class="item2"><a href="C:\Udacity Front End Web Developer\purchase.html" target='_blank' style="text-decoration: none;">Purchase</a></div>
+  <div class="item3"><a href="C:\Udacity Front End Web Developer\savings.html" target="_blank" style="text-decoration: none;">Savings_Account</a></div>
+  <div class="item4"><a href="C:\Udacity Front End Web Developer\dividents.html" target="_blank" style="text-decoration: none;">Divident_paying_stocks</a></div>
+  <div class="item5"><a href="C:\Udacity Front End Web Developer\cutting_expense.html" target="_blank" style="text-decoration: none;">Cutting_Expense</a></div>
+  <div class="item6">Own_house</div>
+  <div class="item7">Sell_your_home_without_Realtor</div>
+  <div class="item8">Saving_on_insurance</div>
+  <div class="item9">Save_our_planet</div>
+  </div>
+  <p></p>
+  <p></p>
+  <div class="footer">
+  <div class="contacts"><a href ="Contacts" style="text-decoration: none;">&nbsp Contacts</a></div>
+  <div class="faq "><a href ="faq" style="text-decoration: none;">&nbsp Faq</a></div>
+  <div class="twitter"><a href ="twitter" style="text-decoration: none;">&nbsp twitter</a></div>
+  <div class="linkdin"><a href ="linkdin" style="text-decoration: none;">&nbsp Linkdin</a></div>
+  </div>
+  </html>
